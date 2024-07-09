@@ -527,7 +527,7 @@ class Teams(BaseClient):
         :return: success
         :rtype: bool
         """
-        path = f'team/{team_id}/kick/{user_id}'
+        path = f'api/team/{team_id}/kick/{user_id}'
         return self._r.post(path)['ok']
 
     def message_all(self, team_id, message):
